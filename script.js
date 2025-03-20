@@ -39,7 +39,7 @@ const randomDirection = (direction) => {
 
 function primenum() {
   let number = 1;
-  let current = [0, 5];
+  let current = [0, STEP];
   let direction = [0, 1];
   let moveInterval;
   if (moveInterval) clearInterval(moveInterval);
