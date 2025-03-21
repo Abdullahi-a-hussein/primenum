@@ -2,7 +2,7 @@ const canvas = document.getElementById("canvas");
 const w = window.innerWidth;
 const h = window.innerHeight;
 const PI = Math.PI;
-const STEP = 2;
+const STEP = 4;
 canvas.width = w;
 canvas.height = h;
 const ctx = canvas.getContext("2d");
@@ -54,7 +54,10 @@ function primenum() {
     ];
     if (checkPrime) {
       ctx.beginPath();
-      ctx.arc(current[0], current[1], 2, 0, PI * 2);
+      ctx.arc(current[0], current[1], 3.5, 0, PI * 2);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(current[0], current[1], 1.5, 0, PI * 2);
       ctx.fill();
     }
     ctx.beginPath();
